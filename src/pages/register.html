@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/globalStyles.css" />
+    <link rel="stylesheet" href="../styles/register.css" />
+
+    <!-- SCRIPT -->
+    <script type="module" defer src="../scripts/register.js"></script>
+
+    <title>PetInfo - Cadastro</title>
+  </head>
+  <body>
+    <main class="main__container--register">
+      <section class="register__container--signup">
+        <div class="signup__container--header">
+          <h3 class="signup__header--title">Cadastro</h3>
+          <a class="signup__header--returnBtn" href="../../index.html">
+            Voltar para o login
+          </a>
+        </div>
+        <form class="signup__container--form">
+          <div class="form__container--username">
+            <label class="form__username--label" for="username">Usuário</label>
+            <input
+              class="form__username--input signup__input"
+              placeholder="Digite seu usuário aqui"
+              type="text"
+              name="username"
+            />
+          </div>
+          <div class="form__container--email">
+            <label class="form__email--label" for="email">Email</label>
+            <input
+              class="form__email--input signup__input"
+              placeholder="Digite seu email aqui"
+              type="email"
+              name="email"
+            />
+          </div>
+          <div class="form__container--profilePic">
+            <label class="form__profilePic--label" for="profilePic">
+              Link da foto do perfil
+            </label>
+            <input
+              class="form__profilePic--input signup__input"
+              placeholder="Insira o link aqui"
+              type="url"
+              name="avatar"
+            />
+          </div>
+          <div class="form__container--password">
+            <label class="form__password--label" for="password">Senha</label>
+            <input
+              class="form__password--input signup__input"
+              placeholder="Digite sua senha aqui"
+              type="password"
+              name="password"
+              autocomplete="new-password"
+            />
+          </div>
+          <button class="form__container--signupBtn" type="submit">
+            Cadastrar
+          </button>
+        </form>
+        <a class="signup__container--returnBtn" href="../../index.html">
+          Voltar para o login
+        </a>
+      </section>
+      <section class="register__container--info">
+        <div class="description__container">
+          <h1 class="description__container--h1">PetInfo</h1>
+          <h2 class="description__container--h2">Ooooooba!</h2>
+          <p class="description__container--p">
+            Agora vamos poder contribuir para o bem estar do seu pet por meio do
+            conhecimento
+          </p>
+        </div>
+        <div class="petImages__container">
+          <img
+            class="petImages__container--catRectangleY"
+            src="../assets/images/register-cat1.svg"
+            alt="Cat"
+          />
+          <img
+            class="petImages__container--catSquare"
+            src="../assets/images/register-cat2.svg"
+            alt="Cat"
+          />
+          <img
+            class="petImages__container--catRectangleX"
+            src="../assets/images/register-cat3.svg"
+            alt="Dog"
+          />
+          <img
+            class="petImages__container--dogSquare"
+            src="../assets/images/register-dog1.svg"
+            alt="Dog"
+          />
+        </div>
+      </section>
+    </main>
+    <!-- <div class="toast__container">
+      <span class="toast__container--title">
+        <div class="toast__title--icon">
+          <img src="../assets/icons/check-solid.svg" />
+          <img src="../assets/icons/error.svg" />
+        </div>
+        <h3 class="toast__title--h3"></h3>
+      </span>
+      <p class="toast__container--message"><a href="../../index.html"></a></p>
+    </div> -->
+  </body>
+</html>

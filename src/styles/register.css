@@ -1,0 +1,142 @@
+.main__container--register {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6.9375rem;
+}
+
+.register__container--signup {
+  height: 42rem;
+  width: 23rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.625rem;
+  padding: 2.75rem 1.5rem;
+  border: 1px solid var(--grey600);
+  border-radius: var(--radius4);
+  font-weight: 500;
+}
+
+.signup__container--header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.signup__header--title {
+  font-size: 1.25rem;
+}
+
+.signup__header--returnBtn,
+.signup__container--returnBtn {
+  height: 2.375rem;
+  padding: 0.4375rem 0;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--grey600);
+  border-radius: var(--radius4);
+  color: var(--grey100);
+}
+
+.signup__header--returnBtn:hover,
+.signup__container--returnBtn:hover {
+  background-color: var(--grey800);
+}
+
+.signup__header--returnBtn {
+  height: 2rem;
+  padding: 0.3438rem 0;
+  width: 8.3125rem;
+  font-size: 0.875rem;
+}
+
+.signup__container--form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.625rem;
+}
+
+.form__container--username,
+.form__container--email,
+.form__container--profilePic,
+.form__container--password {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.signup__container--returnBtn {
+  width: 100%;
+  height: 2.375rem;
+  font-size: 1rem;
+}
+
+.register__container--info {
+  height: 26.1875rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.description__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.5rem;
+}
+
+.description__container--h2 {
+  color: var(--brand100);
+}
+
+.description__container--p {
+  width: 100%;
+  font-weight: 400;
+  font-size: 0.9688rem;
+}
+
+.petImages__container {
+  width: 18.75rem;
+  height: 12.6875rem;
+  position: relative;
+}
+
+.petImages__container--catRectangleY {
+  position: absolute;
+  left: 0;
+}
+
+.petImages__container--catSquare {
+  position: absolute;
+  top: 0;
+  left: 6.5625rem;
+}
+
+.petImages__container--catRectangleX {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.petImages__container--dogSquare {
+  position: absolute;
+  right: 0;
+}

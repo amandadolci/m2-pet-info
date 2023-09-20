@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/globalStyles.css" />
+    <link rel="stylesheet" href="../styles/modal.css" />
+    <link rel="stylesheet" href="../styles/dashboard.css" />
+
+    <!-- SCRIPT -->
+    <script type="module" defer src="../scripts/dashboard.js"></script>
+
+    <title>PetInfo - Feed</title>
+  </head>
+  <body>
+    <header class="header__container--dashboard">
+      <nav class="dashboard__header--nav">
+        <h1 class="header__nav--h1">PetInfo</h1>
+        <div class="header__nav--userContainer">
+          <button class="nav__userContainer--createPostBtn">
+            Criar publicação
+          </button>
+          <img class="nav__userContainer--avatar" />
+          <div class="nav__userContainer--logout hidden">
+            <h3 class="userContainer__logout--username"></h3>
+            <button class="userContainer__logout--button">
+              <img
+                class="userContainer__logout--iconBtn"
+                src="../assets/icons/sign-out-alt.svg"
+              />
+              <h3 class="userContainer__logout--titleBtn">Sair da conta</h3>
+            </button>
+          </div>
+          <div class="nav__userContainer--after hidden"></div>
+        </div>
+      </nav>
+      <div class="dashboard__header--feedBar">
+        <h2>Feed</h2>
+      </div>
+    </header>
+    <main class="main__container--dashboard">
+      <ul class="dashboard__container--feedList">
+        <!-- <li class="feedList__container--post">
+          <div class="post__container--header">
+            <div class="header__container--info">
+              <div class="header__info--user">
+                <img class="header__user--avatar" />
+                <h4 class="header__user--name"></h4>
+              </div>
+              <span class="header__info--space">|</span>
+              <small class="header__info--date"></small>
+            </div>
+            <div class="header__container--buttons">
+              <button class="header__buttons--edit"></button>
+              <button class="header__buttons--delete"></button>
+            </div>
+          </div>
+          <div class="post__container--content">
+            <h1 class="content__container--title"></h1>
+            <p class="content__container--text"></p>
+            <button class="content__container--openPostBtn"></button>
+          </div>
+        </li> -->
+      </ul>
+    </main>
+    <dialog class="modal__controller">
+      <!-- <div class="modal__container"> MODAL POST
+        <div class="modal__container--header">
+          <div class="header__container--info">
+            <div class="header__info--user">
+              <img
+                class="header__user--avatar"
+              />
+              <h4 class="header__user--name"></h4>
+            </div>
+            <span class="header__info--space">|</span>
+            <small class="header__info--date"></small>
+          </div>
+          <button class="modal__header--closeBtn">X</button>
+        </div>
+        <div class="modal__container--contentANDpublish">
+          <h1 class="content__container--title"></h1>
+          <p class="content__container--text"></p>
+        </div>
+      </div> -->
+      <!-- <div class="modal__container"> MODAL PUBLICAÇÃO
+        <header class="modal__container--header">
+          <h1 class="modal__header--title">Criando novo post</h1>
+          <button class="modal__header--closeBtn modal__exit">X</button>
+        </header>
+        <form class="modal__container--contentANDpublish">
+          <div class="modal__publishContainer--title">
+            <label class="publish__container--titleLabel" for="title">
+              Título do post
+            </label>
+            <input
+              class="publish__container--titleInput"
+              placeholder="Digite o título aqui..."
+              type="text"
+              name="title"
+            />
+          </div>
+          <div class="modal__publishContainer--text">
+            <label class="publish__container--textLabel" for="content">
+              Conteúdo do post
+            </label>
+            <textarea
+              class="publish__container--textInput"
+              placeholder="Digite o conteúdo do post aqui..."
+              name="content"
+              wrap="soft"
+            ></textarea>
+          </div>
+          <div class="publish__container--buttons">
+            <button
+              class="modal__container--cancelBtn modal__exit"
+              type="reset"
+            >
+              Cancelar
+            </button>
+            <button class="modal__container--publishBtn" type="submit">
+              Publicar
+            </button>
+          </div>
+        </form>
+      </div> -->
+      <!-- <div class="modal__container"> MODAL DELETAR
+        <header class="modal__container--header">
+          <h1 class="modal__header--title">Confirmação de exclusão</h1>
+          <button class="modal__header--closeBtn">X</button>
+        </header>
+        <div class="modal__container--contentANDpublish">
+          <h1 class="content__container--title">
+            Tem certeza que deseja excluir este post?
+          </h1>
+          <p class="content__container--text">
+            Essa ação não poderá ser desfeita, então pedimos que tenha cautela
+            antes de concluir.
+          </p>
+          <div class="modal__container--buttons">
+            <button class="modal__container--cancelBtn">Cancelar</button>
+            <button class="modal__container--deleteBtn">
+              Sim, excluir este post
+            </button>
+          </div>
+        </div>
+      </div> -->
+    </dialog>
+  </body>
+</html>
