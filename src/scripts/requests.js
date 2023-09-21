@@ -1,5 +1,5 @@
 const token = JSON.parse(localStorage.getItem('@petInfo:token')) || '';
-const baseURL = 'https://api-petinfo-d83i.onrender.com/';
+const baseURL = 'https://api-petinfo-45zv.onrender.com/';
 const requestHeaders = {
 	'Content-Type': 'application/json',
 	Authorization: `Bearer ${token}`,
